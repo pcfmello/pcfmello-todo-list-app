@@ -1,0 +1,51 @@
+<div class="page-header">
+  <h1>Tarefas <small>{{titulo}}</small></h1>
+</div>
+
+<nav class="text-right barra-navegacao">
+	<div class="row">
+		<a href="#/tarefas/new" class="btn btn-primary">Nova tarefa</a>		
+	</div>
+</nav>
+
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th class="text-left" width="40%">NOME</th>			
+			<th class="text-center" width="20%">INICIO</th>
+			<th class="text-center" width="20%">VENC</th>
+			<th class="text-center" width="15%%">STATUS</th>
+			<th class="text-center" width="3%">%</th>
+			<th width="1%"></th>
+			<th width="1%"></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in tarefasList" ng-if="tarefasList.length">
+			<td><a href="#/tarefas/show/{{item.id}}">{{item.nome | limitTo: 35}}</a></td>			
+			<td class="text-center">
+				<span ng-if="item.dataInicio">{{item.dataInicio | date: "dd/MM/yyyy"}}</span>
+				<span ng-if="!item.dataInicio">Tarefa não iniciada</span>
+			</td>
+			<td class="text-center">{{item.dataVencimento | date: "dd/MM/yyyy"}}</td>
+			<td class="text-center">{{item.status.descricao}}</td>
+			<td class="text-center">{{item.porcentagemConcluida}}</td>
+			<td class="text-right">
+				<a href="#/tarefas/edit/{{item.id}}" class="btn btn-warning btn-sm btn-xs botao-editar">
+					<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+				</a>				
+			</td>
+			<td>
+				<button type="button" class="btn btn-danger btn-xs botao-excluir" ng-click="excluiTarefa(item)">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
+			</td>
+		</tr>
+		
+		<tr ng-if="!tarefasList.length">
+			<td colspan="7">Nenhuma tarefa cadastrada</td>
+		</tr>
+
+	</tbody>
+</table>

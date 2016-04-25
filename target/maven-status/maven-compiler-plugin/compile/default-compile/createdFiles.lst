@@ -1,0 +1,11 @@
+br/com/todo/list/app/servicesImpl/StatusServiceImpl.class
+br/com/todo/list/app/entities/Status.class
+br/com/todo/list/app/servicesImpl/TarefaServiceImpl.class
+br/com/todo/list/app/entities/Tarefa.class
+br/com/todo/list/app/services/TarefaService.class
+br/com/todo/list/app/repositories/StatusRepository.class
+br/com/todo/list/app/rest/TarefasRest.class
+br/com/todo/list/app/TodoListAppApplication.class
+br/com/todo/list/app/repositories/TarefaRepository.class
+br/com/todo/list/app/ServletInitializer.class
+br/com/todo/list/app/services/StatusService.class

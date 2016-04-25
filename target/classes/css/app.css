@@ -1,0 +1,30 @@
+.cabecalho {
+    
+}
+
+.conteudo-principal {    
+    margin: 0 10%;
+}
+
+.conteudo-central {
+    margin-bottom: 7%;
+}
+
+.rodape {
+	width: 100%;
+	background-color: #222;
+	vertical-align: middle;
+	color: #778899;
+	text-align: center;
+	padding: .5em 0;
+	position: fixed;
+    bottom: 0;
+}
+
+.icone-titulo {
+	margin-right: 1em;
+}
+
+.barra-navegacao {
+	margin-bottom: 1em;
+}

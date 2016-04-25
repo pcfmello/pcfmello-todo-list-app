@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: todo-list-app
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Paulo Cesar Ferreira de Mello [pcfmello@gmail.com]
+Implementation-Vendor-Id: br.com.todo-list-app
+Build-Jdk: 1.8.0_77
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

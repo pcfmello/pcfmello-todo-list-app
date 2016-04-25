@@ -1,0 +1,53 @@
+<header class="page-header">
+  <h1>{{titulo}} <small>{{subtitulo}}</small></h1>
+</header>
+<nav class="text-right barra-navegacao">
+	<div class="row">
+		<a href="#/tarefas/edit/{{tarefa.id}}" class="btn btn-warning">Editar</a>
+		<a href="#/tarefas" class="btn btn-danger">Cancelar</a>
+	</div>
+</nav>
+<main>
+	<div class="row">
+		<div class="col-md-9">
+			<div class="form-group">
+				<label>Nome</label>
+				<output name="tarefa-nome">{{tarefa.nome | limitTo: 65}}</output>				
+			</div>
+		</div>				
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="form-group">
+				<label>Data de Cadastro</label>
+				<output name="tarefa-data-cadastro">{{tarefa.dataCadastro | date: 'dd/MM/yyyy'}}</output>				
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-group">
+				<label>Vencimento</label>
+				<output name="tarefa-data-vencimento">{{tarefa.dataVencimento | date: 'dd/MM/yyyy'}}</output>				
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-group">
+				<label>Status</label>
+				<output name="tarefa-status">{{tarefa.status.descricao}}</output>				
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="form-group">
+				<label>Concluído</label>
+				<output name="tarefa-porcentagem-concluida">{{tarefa.porcentagemConcluida}}%</output>			
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="form-group">
+				<label>Descrição</label>
+				<output name="tarefa-descrição">{{tarefa.descricao}}</output>				
+			</div>
+		</div>		
+	</div>
+</main>

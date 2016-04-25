@@ -1,0 +1,50 @@
+<div class="page-header">
+  <h1>{{titulo}} <small>{{subtitulo}}</small></h1>
+</div>
+<form name="tarefaForm">
+	<nav class="text-right barra-navegacao">
+		<div class="row">
+			<button type="button" class="btn btn-primary" ng-click="insereTarefa(tarefa)" ng-disabled="tarefaForm.$invalid">Salvar</button>
+			<button type="button" class="btn btn-warning" ng-click="limpaDados()">Limpar</button>
+			<a href="#/tarefas" class="btn btn-danger">Cancelar</a>
+		</div>
+	</nav>
+	
+	<div class="row">
+	  	<div class="form-group col-md-12">
+	    	<label for="tarefa-nome">Nome</label>
+	    	<input type="text" class="form-control" name="tarefa-nome" ng-model="tarefa.nome" placeholder="Digite o nome da tarefa" required="required" >
+	  	</div>
+	</div>
+	<div class="row">			
+		<div class="form-group col-md-4">
+			<label for="tarefa-data-vencimento">Data de Vencimento</label>				
+			<div class="input-group">
+				<input type="text" class="form-control" uib-datepicker-popup="dd/MM/yyyy" ng-model="tarefa.dataVencimento" 
+						is-open="calendarioAberto" datepicker-options="dateOptions" ng-required="true" close-text="Close" placeholder="Data de vencimento" />
+	          	<span class="input-group-btn">
+	            	<button type="button" class="btn btn-default" ng-click="mostraCalendario()"><i class="glyphicon glyphicon-calendar"></i></button>
+	          	</span>
+          	</div>
+		</div>	  
+		<div class="form-group col-md-4">
+	  		<label for="tarefa-status">Status</label>
+	  		<select class="form-control" name="tarefa-status" ng-model="tarefa.status" ng-options="item.descricao for item in statusList track by item.id" 
+	  				required="required">
+	  			<option value="" disabled>-- Selecione o status --</option>
+	  		</select>
+		</div>
+		<div class="form-group col-md-4">
+	   		<label for="tarefa-porcentagem-concluida">% Concluida</label>
+	    	<input type="number" class="form-control" id="tarefa-porcentagem-concluida" ng-model="tarefa.porcentagemConcluida" 
+	    			min="0" max="100" placeholder="Informe a porcentagem concluída (entre 0 e 100)">
+	  	</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-12">
+	   		<label for="tarefa-descricao">Descrição</label>
+	    	<textarea class="form-control" name="tarefa-descricao" ng-model="tarefa.descricao" placeholder="Descreva essa tarefa" 
+	    			rows="10" required="required" />
+	  	</div>		
+	</div>
+</form>

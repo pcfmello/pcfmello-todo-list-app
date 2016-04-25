@@ -1,0 +1,11 @@
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/TodoListAppApplication.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/ServletInitializer.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/repositories/TarefaRepository.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/services/StatusService.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/servicesImpl/StatusServiceImpl.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/services/TarefaService.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/rest/TarefasRest.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/repositories/StatusRepository.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/entities/Status.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/servicesImpl/TarefaServiceImpl.java
+/home/pcfmello/Development Folder/spring-projects/workspace/todo-list-app/src/main/java/br/com/todo/list/app/entities/Tarefa.java
