@@ -1,6 +1,5 @@
 angular.module('todoListApp').value('Config', {
 	
-	appName: 'TODO List App',
 	appTitle: 'Tarefas',
 	appListar: 'listar',
 	appInserir: 'inserir',

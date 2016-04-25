@@ -2,6 +2,8 @@
 <html lang="pt-BR" ng-app="todoListApp">
     <head>
         <meta charset="utf-8">
+   
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
       
@@ -32,7 +34,6 @@
         <script src="js/services/TarefasService.js"></script>
         
         <!-- Controllers -->
-        <script src="js/controllers/tarefas/LoginTarefaCtrl.js"></script>
         <script src="js/controllers/tarefas/ListaTarefasCtrl.js"></script>
         <script src="js/controllers/tarefas/NovaTarefaCtrl.js"></script>
         <script src="js/controllers/tarefas/ShowTarefaCtrl.js"></script>
@@ -48,17 +49,18 @@
         <script src="js/diretivas/alertMsg.js"></script>
       
     </head>
-    <body ng-controller="LoginTarefaCtrl">
+    <body>
         <header class="cabecalho">
             <!-- INSERIR UM CABEÇALHO -->
             <nav class="navbar navbar-inverse navbar-static-top">
                 <div class="container-fluid conteudo-principal">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">                      
-                      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-tasks icone-titulo" aria-hidden="true"></span>{{titulo}}</a>
+                      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-tasks icone-titulo" aria-hidden="true"></span>TODO List App</a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
+                    <!-- 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      
                       <ul class="nav navbar-nav navbar-right">
@@ -75,7 +77,7 @@
                         </li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
-                  </div><!-- /.container-fluid -->
+                 <!--  </div> --><!-- /.container-fluid -->                    
             </nav>
         </header>
         

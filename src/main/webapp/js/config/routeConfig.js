@@ -1,14 +1,6 @@
 angular.module('todoListApp').config(function($routeProvider) {
-	 $routeProvider.when('/', {
-         templateUrl: 'view/tarefas/tarefas-list.html', 
-         controller: 'ListarTarefasCtrl',
-         resolve: {
-       	  	tarefas: function(TarefasAPI) {
-       		  	return TarefasAPI.getTarefasList();
-        	}        	 
-          }
-      });
-      $routeProvider.when('/tarefas', {
+    
+	 $routeProvider.when('/tarefas', {
           templateUrl: 'view/tarefas/tarefas-list.html', 
           controller: 'ListarTarefasCtrl',
           resolve: {
@@ -16,8 +8,8 @@ angular.module('todoListApp').config(function($routeProvider) {
         		  return TarefasAPI.getTarefasList();
         	  }        	 
           }
-      });
-      $routeProvider.when('/tarefas/new', {
+      })
+      .when('/tarefas/new', {
           templateUrl: 'view/tarefas/tarefas-edit.html', 
           controller: 'NovaTarefaCtrl',
           resolve: {
@@ -25,8 +17,8 @@ angular.module('todoListApp').config(function($routeProvider) {
         		  return TarefasAPI.getStatusList();
         	  }
           }
-      });
-      $routeProvider.when('/tarefas/edit/:id', {
+      })
+      .when('/tarefas/edit/:id', {
           templateUrl: 'view/tarefas/tarefas-edit.html', 
           controller: 'EditarTarefaCtrl',
           resolve: {
@@ -37,8 +29,8 @@ angular.module('todoListApp').config(function($routeProvider) {
         		  return TarefasAPI.getTarefa($route.current.params.id);
         	  }
           }
-      });
-      $routeProvider.when('/tarefas/show/:id', {
+      })
+      .when('/tarefas/show/:id', {
           templateUrl: 'view/tarefas/tarefas-show.html', 
           controller: 'ShowTarefaCtrl',
           resolve: {
@@ -46,5 +38,8 @@ angular.module('todoListApp').config(function($routeProvider) {
         		  return TarefasAPI.getTarefa($route.current.params.id);
         	  }
           }
-      });
+      })
+      .otherwise({
+    	  redirectTo: '/tarefas'
+      });      
 });
