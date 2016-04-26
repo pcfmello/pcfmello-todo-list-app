@@ -29,7 +29,7 @@
 		</div>	  
 		<div class="form-group col-md-4">
 	  		<label for="tarefa-status">Status</label>
-	  		<select class="form-control" name="tarefa-status" ng-model="tarefa.status" ng-options="item.descricao for item in statusList track by item.id" 
+	  		<select class="form-control" name="tarefa-status" ng-model="tarefa.status" ng-options="item.descricao for item in statusList track by $index" 
 	  				required="required">
 	  			<option value="" disabled>-- Selecione o status --</option>
 	  		</select>
