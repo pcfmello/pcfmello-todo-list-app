@@ -15,7 +15,7 @@ public class TodoListAppApplication {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/greeting-javaconfig").allowedOrigins("'https://pcfmello-todo-list-app.herokuapp.com");
+                registry.addMapping("/rest").allowedOrigins("'https://pcfmello-todo-list-app.herokuapp.com");
             }
         };
     }
