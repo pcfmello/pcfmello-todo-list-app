@@ -10,6 +10,6 @@ angular.module('todoListApp').value('Config', {
 	//baseUrl: 'http://localhost:8080/todo-list-app/rest/tarefas'
 	
 	/* Produção */
-	baseUrl: 'https://pcfmello-todo-list-app.herokuapp.com'
+	baseUrl: 'https://pcfmello-todo-list-app.herokuapp.com/rest/tarefas'
 
 });
