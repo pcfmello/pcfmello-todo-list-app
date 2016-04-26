@@ -6,10 +6,10 @@ angular.module('todoListApp').value('Config', {
 	appEditar: 'editar',
 	appMostrar: 'detalhes',
 	
-	/* Development */
-	/*baseUrl: 'http://localhost:8080/todo-list-app/rest/tarefas'*/
+	/* Desenvolvimento */
+	//baseUrl: 'http://localhost:8080/todo-list-app/rest/tarefas'
 	
-	/* Production */
+	/* Produção */
 	baseUrl: 'https://pcfmello-todo-list-app.herokuapp.com'
 
 });
