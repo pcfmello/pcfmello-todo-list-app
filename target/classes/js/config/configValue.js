@@ -10,6 +10,6 @@ angular.module('todoListApp').value('Config', {
 	/*baseUrl: 'http://localhost:8080/todo-list-app/rest/tarefas'*/
 	
 	/* Production */
-	baseUrl: 'https://young-oasis-97048.herokuapp.com/rest/tarefas'
+	baseUrl: 'https://pcfmello-todo-list-app.herokuapp.com'
 
 });
